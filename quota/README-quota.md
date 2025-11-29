@@ -17,18 +17,23 @@ Puis remonter les partitions pour appliquer les options :
 ```bash
 sudo mount -o remount /home_new
 sudo mount -o remount /data_new
+```
 
 ## 2. Exécuter le script de setup
 
 Le script setup_home_quota.sh configure les fichiers de quotas et définit les limites pour les utilisateurs :
 
+```bash
 sudo ./setup_home_quota.sh
+```
 
 ## 3. Configuration de crontab pour alertes
 
 Éditer la crontab de l’utilisateur root :
 
+```bash
 sudo crontab -e
+```
 
 Ajouter les lignes suivantes :
 
