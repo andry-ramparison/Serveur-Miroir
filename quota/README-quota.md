@@ -45,15 +45,15 @@ Ajouter les lignes suivantes :
 0 8 * * * [ -f /tmp/quota_alert_flag ] && /chemin/vers/quota_alerte.sh
 ```
 
-    La première ligne exécute le script chaque semaine pour vérifier tous les quotas.
+La première ligne exécute le script chaque semaine pour vérifier tous les quotas.
 
-    La deuxième ligne exécute le script chaque jour uniquement si le fichier /tmp/quota_alert_flag existe, c’est-à-dire si un soft limit a été dépassé.
+La deuxième ligne exécute le script chaque jour uniquement si le fichier /tmp/quota_alert_flag existe, c’est-à-dire si un soft limit a été dépassé.
 
 ## Notes
 
-    Assurez-vous que l’adresse email d’alerte est correctement définie dans quota_alerte.sh.
+Assurez-vous que l’adresse email d’alerte est correctement définie dans quota_alerte.sh.
 
-    Les scripts doivent être exécutables :
+Les scripts doivent être exécutables :
     
 ```bash
 chmod +x setup_home_quota.sh quota_alerte.sh
